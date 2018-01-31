@@ -13,11 +13,11 @@ public class RentalCalculator {
 				rentalFees = 80.0*duration*0.95;
 		}
 		else { //subsequent rental 
-			if (carModel.equals("Honda Fit") && (duration >= 3))
+			if (carModel.equals("Honda Fit") && (duration > 3))
 				rentalFees = 65.0*duration*0.90;
-			else if (carModel.equals("Honda Fit") && (duration <= 3))
+			else if (carModel.equals("Honda Fit") && (duration < 3))
 				rentalFees = 65.0*duration;
-			else if (carModel.equals("Toyota Wish") && (duration >= 3))
+			else if (carModel.equals("Toyota Wish") && (duration > 3))
 				rentalFees = 80.0*duration*0.90;
 			else
 				rentalFees = 80.0*duration;
