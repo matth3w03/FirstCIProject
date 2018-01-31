@@ -31,25 +31,25 @@ public class TestRentalCalculator {
 	@Test
 	//TC5 : Not First timer, HondaFit, 3 Days, expect $195.00
 	public void testTC5() {
-		assertEquals("TC5 failed", RentalCalculator.carRental("Honda Fit", 5, false, false), 325.00, 0.00);
+		assertEquals("TC5 failed", RentalCalculator.carRental("Honda Fit", 5, false, false), 325.00, 0.00); //260
 	}
 	
 	@Test
 	//TC6 : First timer, Toyota Wish, 3 Days, expect $240.00
 	public void testTC6() {
-		assertEquals("TC6 failed", RentalCalculator.carRental("Toyota Wish", 5, false, false), 400.00, 0.00);
+		assertEquals("TC6 failed", RentalCalculator.carRental("Toyota Wish", 5, false, false), 400.00, 0.00); //320
 	}
 	
 	@Test
 	//TC5 : Not First timer, HondaFit, 3 Days, expect $195.00
 	public void testTC7() {
-		assertEquals("TC5 failed", RentalCalculator.carRental("Honda Fit", 3, false, true), 260.00, 0.00);
+		assertEquals("TC5 failed", RentalCalculator.carRental("Honda Fit", 5, false, true), 260.00, 0.00); //175.5
 	}
 	
 	@Test
 	//TC6 : First timer, Toyota Wish, 3 Days, expect $240.00
 	public void testTC8() {
-		assertEquals("TC6 failed", RentalCalculator.carRental("Toyota Wish", 3, false, true), 320.00, 0.00);
+		assertEquals("TC6 failed", RentalCalculator.carRental("Toyota Wish", 5, false, true), 320.00, 0.00); //216
 	}
 
 }
